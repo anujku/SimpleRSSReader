@@ -9,12 +9,7 @@ buildscript {
 apply plugin: 'android'
 
 dependencies {
-<<<<<<< HEAD
     compile files('libs/android-support-v4.jar', 'libs/jsoup-1.7.2.jar')
-=======
-    compile files('libs/android-support-v4.jar')
-    compile files('libs/jsoup-1.7.2.jar')
->>>>>>> 1cdc46fba536b4bc800cdd81ebfd2259b1787d45
 }
 
 android {
