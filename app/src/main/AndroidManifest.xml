@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anuj.project.simplerssreaderapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activities.AndroidRSSReaderApplicationActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Add New Site Activity -->
+        <activity android:name=".activities.AddNewSiteActivity" />
+
+        <!-- List rss items Activity -->
+        <activity android:name=".activities.ListRSSItemsActivity"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <!-- Display webpage Activity -->
+        <activity android:name=".activities.DisplayWebPageActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation" />
+    </application>
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
